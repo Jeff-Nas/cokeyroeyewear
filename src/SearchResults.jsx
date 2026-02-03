@@ -16,7 +16,7 @@ export function SearchResults({ value, onChange }) {
         );
 
   return (
-    <div className="p-3 min-h-150 w-full">
+    <div className="p-3 min-h-150 md:min-h-200 w-full">
       <input
         className="block p-1 mb-4 w-full md:w-3/4 mx-auto border border-gray-400 rounded"
         type="text"
