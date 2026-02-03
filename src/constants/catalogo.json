@@ -1,0 +1,583 @@
+[
+  {
+    "id": 1,
+    "name": "Letícia Premium",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/leticia-premium-cover.jpg",
+      "gallery": ["/assets/img/leticia-premium-side1.jpg"]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Retrô Caramelo",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/retro-caramelo-cover.jpg",
+      "gallery": ["/assets/img/retro-caramelo-side1.jpg"]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Aviador",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/aviador-cover.jpg",
+      "gallery": ["/assets/img/aviador-side1.jpg"]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Óculos Amanda",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/amanda-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 5,
+    "name": "Morgana",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/morgana-cover.jpg",
+      "gallery": [
+        "/assets/img/morgana-side1.jpg",
+        "/assets/img/morgana-side2.jpg"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Rock Star",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/rock-star-cover.jpg",
+      "gallery": [
+        "/assets/img/rock-star-side1.jpg",
+        "/assets/img/rock-star-side2.jpg",
+        "/assets/img/rock-star-side3.jpg",
+        "/assets/img/rock-star-side4.jpg",
+        "/assets/img/rock-star-side5.jpg"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "LUPA VILÃO",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/lupa-vilao-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 8,
+    "name": "ROMA",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/roma-cover.jpg",
+      "gallery": ["/assets/img/roma-side.jpg"]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Ipanema",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/ipanema-cover.jpg",
+      "gallery": ["/assets/img/ipanema-side.jpg"]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Borneo",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/borneo-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 11,
+    "name": "Kiara",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/kiara-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 12,
+    "name": "Tailândia",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/tailandia-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 13,
+    "name": "Texas",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/texas-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 14,
+    "name": "Mika",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/mika-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 15,
+    "name": "Luna",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/luna-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 16,
+    "name": "Luxe",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/luxe-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 17,
+    "name": "Safira",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/safira-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 18,
+    "name": "RETRÖ PRETO",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/retro-preto-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 19,
+    "name": "Raul",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/raul-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 20,
+    "name": "Raul Mini",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/raul-mini-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 21,
+    "name": "Aviador Alok",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/aviador-alok-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 22,
+    "name": "RAUL MINI LARANJA",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/raul-mini-laranja-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 23,
+    "name": "Hexagonal Prata",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/hexagonal-prata-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 24,
+    "name": "RAUL 1.0",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/raul-1-0-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 25,
+    "name": "RAUL MINI Transparente",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/raul-mini-transparente-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 26,
+    "name": "MIAMI",
+    "price": 49.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/miami-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 27,
+    "name": "Clubmaster",
+    "price": 59.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/clubmaster-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 28,
+    "name": "Cristal 1.0",
+    "price": 49.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/cristal-1-0-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 29,
+    "name": "Oversized Radar",
+    "price": 69.9,
+    "originalPrice": 89.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/oversized-radar-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 30,
+    "name": "Dubai",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/dubai-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 31,
+    "name": "Mari",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/mari-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 32,
+    "name": "Los Angeles",
+    "price": 39.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/los-angeles-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 33,
+    "name": "JAMPA",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/jampa-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 34,
+    "name": "Alice",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/alice-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 35,
+    "name": "Jeri",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/jeri-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 36,
+    "name": "Malu",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/malu-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 37,
+    "name": "Bali",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/bali-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 38,
+    "name": "Virgínia",
+    "price": 49.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/virginia-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 39,
+    "name": "Canoa",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/canoa-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 40,
+    "name": "Cristal",
+    "price": 39.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/cristal-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 41,
+    "name": "Cristal Fosco",
+    "price": 49.9,
+    "originalPrice": 59.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/cristal-fosco-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 42,
+    "name": "Hexagonal",
+    "price": 39.9,
+    "originalPrice": 49.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/hexagonal-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 43,
+    "name": "Clubmaster Black",
+    "price": 59.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/clubmaster-black-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 44,
+    "name": "Clubmaster Caramelo",
+    "price": 59.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/clubmaster-caramelo-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 45,
+    "name": "Clubmaster Rajado",
+    "price": 59.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "images": {
+      "cover": "/assets/img/clubmaster-rajado-cover.jpg",
+      "gallery": []
+    }
+  },
+  {
+    "id": 46,
+    "name": "Sasha",
+    "price": 39.9,
+    "originalPrice": 69.99,
+    "description": "",
+    "available": true,
+    "note": "Consultar cores disponíveis",
+    "images": {
+      "cover": "/assets/img/sasha-cover.jpg",
+      "gallery": []
+    }
+  }
+]

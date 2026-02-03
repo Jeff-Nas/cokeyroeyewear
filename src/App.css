@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cairo-style: "Cairo", sans-serif;
+  --font-display: "Red Hat Display", sans-serif;
+}
