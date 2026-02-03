@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 import { SearchIcon, ShoppingCart, MenuIcon, XIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SearchResults } from "./SearchResults";
 
 export function Navbar() {
@@ -13,6 +13,18 @@ export function Navbar() {
     setShowSearch(false);
     setSearchName("");
   }
+
+  useEffect(() => {
+    if (showSearch || isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showSearch, isMenuOpen]);
 
   return (
     <>
