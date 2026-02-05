@@ -9,7 +9,12 @@
     "note": "Consultar cores disponíveis",
     "images": {
       "cover": "/assets/img/leticia-premium-cover.jpg",
-      "gallery": ["/assets/img/leticia-premium-side1.jpg"]
+      "gallery": [
+        "/assets/img/leticia-premium-side1.jpg",
+        "/assets/img/leticia-premium-side2.jpg",
+        "/assets/img/leticia-premium-side3.jpg",
+        "/assets/img/leticia-premium-side4.jpg"
+      ]
     }
   },
   {
@@ -21,7 +26,10 @@
     "available": true,
     "images": {
       "cover": "/assets/img/retro-caramelo-cover.jpg",
-      "gallery": ["/assets/img/retro-caramelo-side1.jpg"]
+      "gallery": [
+        "/assets/img/retro-caramelo-side1.jpg",
+        "/assets/img/retro-caramelo-side2.jpg"
+      ]
     }
   },
   {
@@ -34,7 +42,11 @@
     "note": "Consultar cores disponíveis",
     "images": {
       "cover": "/assets/img/aviador-cover.jpg",
-      "gallery": ["/assets/img/aviador-side1.jpg"]
+      "gallery": [
+        "/assets/img/aviador-side1.jpg",
+        "/assets/img/aviador-side2.jpg",
+        "/assets/img/aviador-side3.jpg"
+      ]
     }
   },
   {
@@ -47,7 +59,11 @@
     "note": "Consultar cores disponíveis",
     "images": {
       "cover": "/assets/img/amanda-cover.jpg",
-      "gallery": []
+      "gallery": [
+        "/assets/img/amanda-side1.jpg",
+        "/assets/img/amanda-side2.jpg",
+        "/assets/img/amanda-side3.jpg"
+      ]
     }
   },
   {
@@ -94,7 +110,10 @@
     "note": "Consultar cores disponíveis",
     "images": {
       "cover": "/assets/img/lupa-vilao-cover.jpg",
-      "gallery": []
+      "gallery": [
+        "/assets/img/lupa-vilao-side1.jpg",
+        "/assets/img/lupa-vilao-side2.jpg"
+      ]
     }
   },
   {
@@ -106,7 +125,7 @@
     "available": true,
     "images": {
       "cover": "/assets/img/roma-cover.jpg",
-      "gallery": ["/assets/img/roma-side.jpg"]
+      "gallery": ["/assets/img/roma-side1.jpg", "/assets/img/roma-side2.jpg"]
     }
   },
   {
@@ -118,7 +137,10 @@
     "available": true,
     "images": {
       "cover": "/assets/img/ipanema-cover.jpg",
-      "gallery": ["/assets/img/ipanema-side.jpg"]
+      "gallery": [
+        "/assets/img/ipanema-side1.jpg",
+        "/assets/img/ipanema-side2.jpg"
+      ]
     }
   },
   {
