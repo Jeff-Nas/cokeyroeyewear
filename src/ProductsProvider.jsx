@@ -4,7 +4,7 @@ import catalogo from "./constants/catalogo.json";
 export const ProductsContext = createContext(null);
 
 export function ProductsProvider({ children }) {
-  const displayed = catalogo.slice(0, 9);
+  const displayed = catalogo.slice(0, 9); //MVP - amostra
 
   return (
     <ProductsContext.Provider value={{ displayed }}>
