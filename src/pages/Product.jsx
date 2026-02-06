@@ -13,6 +13,7 @@ export default function Product() {
     <main>
       <div>
         <h2>{product.name}</h2>
+        <ProductSlider gallery={gallery} />
       </div>
     </main>
   );
