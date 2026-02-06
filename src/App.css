@@ -4,3 +4,15 @@
   --font-cairo-style: "Cairo", sans-serif;
   --font-display: "Red Hat Display", sans-serif;
 }
+
+.my-gallery-slider .swiper-button-next,
+.my-gallery-slider .swiper-button-prev {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .my-gallery-slider .swiper-button-next,
+  .my-gallery-slider .swiper-button-prev {
+    display: flex !important;
+  }
+}

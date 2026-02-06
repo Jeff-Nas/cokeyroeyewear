@@ -2,7 +2,6 @@ import "./App.css";
 import { Header } from "./Header";
 import { ProductsProvider } from "./ProductsProvider";
 import { Route, Routes } from "react-router-dom";
-import { ProductSlider } from "./ProductSlider";
 
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -14,7 +13,6 @@ function App() {
     <ProductsProvider>
       <div>
         <Header />
-        <ProductSlider />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<Product />} />

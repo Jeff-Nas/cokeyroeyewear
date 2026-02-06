@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-export function ProductSlider() {
+export function ProductSlider({ gallery = [] }) {
   // state para guardar a instância do slider de miniaturas
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -19,29 +19,27 @@ export function ProductSlider() {
         loop={true}
         spaceBetween={10}
         navigation={true}
+        // breakpoints={{
+        //   768: {
+        //     navigation: true,
+        //   },
+        // }}
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="rounded-xl mb-4 border border-slate-200"
+        className="rounded-xl mb-4 border border-slate-200 my-gallery-slider"
       >
-        <SwiperSlide>
-          <img
-            src="/assets/img/roma-side1.jpg"
-            className="w-full object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/assets/img/roma-side2.jpg"
-            className="w-full object-cover"
-          />
-        </SwiperSlide>
+        {gallery.map((image) => (
+          <SwiperSlide key={image}>
+            <img src={image} className="w-full object-cover" />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       {/* --- Slider de Miniaturas (Thumbs) --- */}
       <Swiper
-        onSwiper={setThumbsSwiper} // Aqui a mágica acontece
+        onSwiper={setThumbsSwiper} // setando o thumb ativo - objeto swiper
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
@@ -49,15 +47,17 @@ export function ProductSlider() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="thumbs-slider"
       >
-        <SwiperSlide className="cursor-pointer opacity-80 transition-opacity swiper-slide-thumb-active:opacity-100">
-          <img
-            src="/assets/img/roma-side1.jpg"
-            className="rounded-md border-2 border-transparent"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="cursor-pointer opacity-80">
-          <img src="/assets/img/roma-side2.jpg" className="rounded-md" />
-        </SwiperSlide>
+        {gallery.map((image) => (
+          <SwiperSlide
+            key={image}
+            className="cursor-pointer opacity-80 transition-opacity swiper-slide-thumb-active:opacity-100"
+          >
+            <img
+              src={image}
+              className="rounded-md border-2 border-transparent"
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
