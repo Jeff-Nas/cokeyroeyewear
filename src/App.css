@@ -5,6 +5,7 @@
   --font-display: "Red Hat Display", sans-serif;
 }
 
+/*Exibe navigation apenas em telas desktop*/
 .my-gallery-slider .swiper-button-next,
 .my-gallery-slider .swiper-button-prev {
   display: none !important;
