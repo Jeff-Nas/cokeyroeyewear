@@ -13,7 +13,9 @@ export default function Product() {
     <main>
       <div>
         <h2>{product.name}</h2>
-        <ProductSlider gallery={gallery} />
+        <div className="overflow-hidden">
+          <ProductSlider gallery={gallery} />
+        </div>
       </div>
     </main>
   );
