@@ -11,10 +11,15 @@ export default function Product() {
 
   return (
     <main>
-      <div>
-        <h2>{product.name}</h2>
+      <div className="flex flex-col md:flex-row justify-evenly">
         <div className="overflow-hidden">
           <ProductSlider gallery={gallery} />
+        </div>
+        <div>
+          <h2 className="ml-3 text-2xl md:text-4xl font-cairo-style">
+            {product.name}
+          </h2>
+          <div className="flex flex-col gap-3"></div>
         </div>
       </div>
     </main>
