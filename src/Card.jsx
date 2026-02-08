@@ -1,4 +1,4 @@
-import { Badge } from "lucide-react";
+import { formatCurrency } from "./utils/formatCurrency";
 
 export function Card({ image, model, currentPrice, defaultPrice }) {
   const priceCurrent = Number(currentPrice);
@@ -9,13 +9,6 @@ export function Card({ image, model, currentPrice, defaultPrice }) {
   const discountPercent = hasDiscount
     ? Math.floor((discountAmount * 100) / priceDefault)
     : 0;
-
-  const formatCurrency = (value) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    }).format(value);
-  };
 
   return (
     <div className="relative">
