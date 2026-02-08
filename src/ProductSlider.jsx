@@ -8,7 +8,6 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/mousewheel";
-import { Indent } from "lucide-react";
 
 export function ProductSlider({ gallery = [] }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
