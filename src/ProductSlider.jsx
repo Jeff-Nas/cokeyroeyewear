@@ -73,7 +73,7 @@ export function ProductSlider({ gallery = [] }) {
               // Define altura fixa para o slide thumb no desktop para não esticar
               key={`thumb-${index}`}
               onClick={() => setImageIndex(index)}
-              className={`cursor-pointer  hover:opacity-100 transition-opacity h-20! w-20! md:w-full! md:h-24! ${index == imageIndex ? "opacity-100" : "opacity-80"}`}
+              className={`cursor-pointer  hover:opacity-100 transition-opacity h-20! w-20! md:w-full! md:h-24! ${index == imageIndex ? "backdrop-sepia" : "opacity-80"}`}
             >
               <img
                 src={image}
