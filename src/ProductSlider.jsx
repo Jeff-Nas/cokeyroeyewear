@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Mousewheel } from "swiper/modules";
 
 // Styles obrigatórios
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import "swiper/css/mousewheel";
+import { Indent } from "lucide-react";
 
 export function ProductSlider({ gallery = [] }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [imageIndex, setImageIndex] = useState(0);
+  console.log(imageIndex);
 
   return (
     // 1. Layout: Mobile (coluna) | Desktop (linha invertida para thumbs  na esquerda)
@@ -28,8 +32,8 @@ export function ProductSlider({ gallery = [] }) {
           modules={[FreeMode, Navigation, Thumbs]}
           className="rounded-xl w-full"
         >
-          {gallery.map((image) => (
-            <SwiperSlide key={image}>
+          {gallery.map((image, index) => (
+            <SwiperSlide key={`slider-${index}`}>
               <img
                 src={image}
                 className="w-full h-auto object-cover"
@@ -40,7 +44,7 @@ export function ProductSlider({ gallery = [] }) {
         </Swiper>
       </div>
 
-      {/* --- Slider de Miniaturas (Thumbs) --- */}
+      {/* --- Slider de MINIATURAS (Thumbs) --- */}
 
       <div className="w-full h-24 md:w-24 md:h-full shrink-0">
         <Swiper
@@ -49,7 +53,8 @@ export function ProductSlider({ gallery = [] }) {
           slidesPerView={4}
           freeMode={true}
           watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
+          mousewheel={true}
+          modules={[FreeMode, Navigation, Thumbs, Mousewheel]}
           className="thumbs-slider w-full h-full"
           breakpoints={{
             // Mobile: Horizontal
@@ -64,11 +69,12 @@ export function ProductSlider({ gallery = [] }) {
             },
           }}
         >
-          {gallery.map((image) => (
+          {gallery.map((image, index) => (
             <SwiperSlide
-              key={image}
               // Define altura fixa para o slide thumb no desktop para não esticar
-              className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity h-20! w-20! md:w-full! md:h-24!"
+              key={`thumb-${index}`}
+              onClick={() => setImageIndex(index)}
+              className={`cursor-pointer  hover:opacity-100 transition-opacity h-20! w-20! md:w-full! md:h-24! ${index == imageIndex ? "opacity-100" : "opacity-80"}`}
             >
               <img
                 src={image}
