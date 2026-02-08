@@ -13,7 +13,6 @@ export function ProductSlider({ gallery = [] }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [imageIndex, setImageIndex] = useState(0);
   console.log(imageIndex);
-
   return (
     // 1. Layout: Mobile (coluna) | Desktop (linha invertida para thumbs  na esquerda)
     <div className="max-w-2xl mx-auto p-4 flex flex-col md:flex-row-reverse gap-4">
@@ -29,6 +28,7 @@ export function ProductSlider({ gallery = [] }) {
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
           modules={[FreeMode, Navigation, Thumbs]}
+          onSlideChange={(swiper) => setImageIndex(swiper.realIndex)}
           className="rounded-xl w-full"
         >
           {gallery.map((image, index) => (
