@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { calculateDiscount } from "../utils/calculateDiscount";
 import { formatCurrency } from "../utils/formatCurrency";
 import { ShoppingCart } from "lucide-react";
-import { ShoppingCartIcon } from "lucide-react";
 
 export default function Product() {
   const { id } = useParams();
@@ -34,12 +33,13 @@ export default function Product() {
                 Você está economizando{" "}
                 {formatCurrency(Math.floor(discount.discountAmount))}
               </p>
+              {/* CALL TO ACTION */}
               <div className="flex gap-2">
-                <button className="font-display flex-1 text-white bg-[#6c6c07] p-2 rounded">
-                  ADICIONAR AO CARRINHO
+                <button className="font-display flex-1 text-white bg-gray-900 p-2 rounded">
+                  PEDIR NO WHATSAPP
                 </button>
                 <button>
-                  <ShoppingCart className="text-white bg-[#6c6c07] p-2 rounded w-full h-full" />
+                  <ShoppingCart className="text-white bg-gray-900 p-2 rounded w-full h-full" />
                 </button>
               </div>
             </div>
