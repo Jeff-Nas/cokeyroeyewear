@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { calculateDiscount } from "../utils/calculateDiscount";
 import { formatCurrency } from "../utils/formatCurrency";
 import { ShoppingCart } from "lucide-react";
+import { WhatsAppIcon } from "../Icons";
 
 export default function Product() {
   const { id } = useParams();
@@ -19,27 +20,31 @@ export default function Product() {
         <div className="overflow-hidden">
           <ProductSlider gallery={gallery} />
         </div>
-        {/* CARD DO PRODUTO */}
-        <div className="flex flex-col flex-1 lg:max-w-96">
-          <div className="ml-8 mr-4 flex flex-col justify-end h-full lg:mb-6">
-            <h2 className="text-2xl md:text-4xl font-cairo-style mb-3">
+        {/* CARD DESCRIÇÃO DO PRODUTO */}
+        <div className="flex flex-col">
+          <div className="ml-4 mr-4 flex flex-col justify-end h-full lg:mb-6">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-cairo-style mb-3">
               {product.name}
             </h2>
-            <span className="text-2xl font-bold font-cairo-style">
+            <span className="text-2xl md:text-3xl font-bold font-cairo-style">
               {formatCurrency(discount.priceCurrent)}
             </span>
             <div className="flex flex-col gap-3">
-              <p className="text-[#55c405] font-display">
+              <p className="text-[#55c405] font-display mt-2">
                 Você está economizando{" "}
                 {formatCurrency(Math.floor(discount.discountAmount))}
               </p>
-              {/* CALL TO ACTION */}
-              <div className="flex gap-2">
-                <button className="font-display flex-1 text-white bg-gray-900 p-2 rounded">
-                  PEDIR NO WHATSAPP
+              {/* CALL TO ACTION BUTTONS */}
+              <div className="flex gap-2 mt-4 mb-4 max-w-96 lg:max-w-125 ">
+                <button className="font-display flex-1 text-white bg-gray-900 px-4 py-2.5 rounded">
+                  <div className="flex justify-between items-center lg:p-1.5">
+                    <span className="lg:text-xl">PEDIR NO WHATSAPP</span>
+                    <WhatsAppIcon size={28} />
+                  </div>
                 </button>
-                <button>
-                  <ShoppingCart className="text-white bg-gray-900 p-2 rounded w-full h-full" />
+                {/* WISH LIST */}
+                <button className="text-white bg-gray-900 px-4 py-2.5 rounded ">
+                  <ShoppingCart size={24} />
                 </button>
               </div>
             </div>
