@@ -35,7 +35,7 @@ export function ProductSlider({ gallery = [] }) {
             <SwiperSlide key={`slider-${index}`}>
               <img
                 src={image}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover max-h-[50vh]"
                 alt="Produto"
               />
             </SwiperSlide>
