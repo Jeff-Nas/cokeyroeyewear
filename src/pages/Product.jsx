@@ -14,14 +14,14 @@ export default function Product() {
   const discount = calculateDiscount(product.price, product.originalPrice);
 
   return (
-    <main>
-      {/* SLIDER */}
-      <div className="flex flex-col md:flex-row justify-evenly">
-        <div className="overflow-hidden">
+    <main className="min-h-screen flex flex-col">
+      <div className="flex flex-col flex-1 lg:flex-row lg:justify-evenly">
+        {/* SLIDER */}
+        <div className="overflow-hidden md:max-h-[50vh]">
           <ProductSlider gallery={gallery} />
         </div>
         {/* CARD DESCRIÇÃO DO PRODUTO */}
-        <div className="flex flex-col lg:w-112.5">
+        <div className="flex flex-col  lg:w-112.5">
           <div className="ml-4 mr-4 flex flex-col justify-end h-full lg:mb-6">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-cairo-style mb-3">
               {product.name}
