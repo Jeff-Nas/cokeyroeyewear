@@ -15,7 +15,9 @@ export function Navbar() {
   }
 
   useEffect(() => {
+    //trigger: search icon or menu
     if (showSearch || isMenuOpen) {
+      //prevents the page from scrolling
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -71,6 +73,7 @@ export function Navbar() {
 
       {/* FUNDO ESCURO - OVERLAY */}
       <div
+        //fills the entire screen, controls visibility, and allows you to close it by clicking outside
         className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
           isMenuOpen || showSearch
             ? "opacity-100 visible"
@@ -80,11 +83,13 @@ export function Navbar() {
       ></div>
 
       {/* Menu gaveta- lateral */}
+
       <div
+        //-translate-x-full: moves the menu completely to the negative X axis
         className={`font-display fixed top-0 left-0 h-full w-[80%] max-w-sm bg-white text-black z-50 shadow-xl transition-transform
       duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        {/* {Cabeçalho do menu gaveta} */}
+        {/* Cabeçalho do menu gaveta */}
         <div className="flex justify-between p-4">
           <span className="font-bold text-xl">MENU</span>
           <button
@@ -94,7 +99,7 @@ export function Navbar() {
             <X className="w-6 h-6" />
           </button>
         </div>
-        {/* {links} */}
+        {/* Links */}
         <div className="flex flex-col p-4 gap-4 ml-4">
           <a href="#" className="text-lg font-medium hover:text-gray-600">
             Masculino
