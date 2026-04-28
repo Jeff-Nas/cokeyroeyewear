@@ -7,21 +7,22 @@ export function Card({ image, model, currentPrice, defaultPrice }) {
   return (
     <div className="relative">
       <div>
-        <div className="aspect-3/4 overflow-hidden">
+        {/*Imagem do produto */}
+        <div className="aspect-square overflow-hidden">
           <img
             src={image}
             alt={`Óculos modelo ${model}`}
-            className="h-full w-full object-cover rounded"
+            className="h-full w-full object-cover rounded-lg"
           />
         </div>
-        {/* PROMO */}
+        {/* Tag de promoção */}
         {discount.hasDiscount && (
           <span className="bg-[#ececa875] p-1 md:p-1.5 rounded absolute top-2 left-2 text-sm md:text-base text-gray-900 font-light">
             -{discount.percenntage}%
           </span>
         )}
       </div>
-
+      {/*Título e descrição do produto */}
       <h2 className="text-gray-700 md:text-xl">{model}</h2>
       <div className="flex leading-3 items-center">
         <p className="font-bold md:text-xl text-[#2b2700fd]">

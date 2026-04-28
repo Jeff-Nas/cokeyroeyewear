@@ -30,17 +30,13 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="font-display relative">
+      <nav className="font-display relative py-2">
         <div className="flex justify-between items-center p-2 md:p-4  text-gray-800">
           <div className="md:flex gap-2 items-center ml-1.5">
-            <img
-              className="hidden md:flex w-12"
-              src="/public/assets/img/cokeyro-logo.png"
-              alt="logo"
-            />
             <a href="/">
-              <h1 className="text-2xl font-bold tracking-tighter text-[#726a1a]">
-                COKEYRO
+              {/*LOGO*/}
+              <h1 className="text-2xl font-semibold tracking-wider font-cairo-style text-slate-800">
+                Solara Coast
               </h1>
             </a>
           </div>

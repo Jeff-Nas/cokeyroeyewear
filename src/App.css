@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+  /*- - - Fontes - - -*/
   --font-cairo-style: "Cairo", sans-serif;
   --font-display: "Red Hat Display", sans-serif;
+  --font-playfair-display: "Playfair Display", serif;
 }
 
 /*Exibe navigation apenas em telas desktop*/
