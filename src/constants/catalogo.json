@@ -74,7 +74,7 @@
     "description": "",
     "available": true,
     "images": {
-      "cover": "/assets/img/morgana-cover.jpg",
+      "cover": "/assets/img/morgana-cover.webp",
       "gallery": [
         "/assets/img/morgana-side1.jpg",
         "/assets/img/morgana-side2.jpg"

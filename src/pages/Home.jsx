@@ -7,7 +7,7 @@ export default function Home() {
       <div className="mb-16 shadow-xl rounded-2xl">
         {/*Banner */}
         <img
-          src="/assets/banner/banner-home.png"
+          src="/assets/banner/banner-home.webp"
           alt="imagem do banner"
           className="w-full h-auto overflow-hidden rounded-t-xl"
         />
